@@ -21,8 +21,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              
+            <ul class="navbar-nav mr-auto">             
               <li class="nav-item">
                 <%= link_to "Home", home_path, class: 'nav-link' %>
               </li>
@@ -36,9 +35,18 @@
               </li>
 
               <li class="nav-item">
-                <%= link_to "Contact", contact_path, class: 'nav-link' %>            
+                <%= link_to "Blogs", posts_path, class: 'nav-link' %>            
               </li>
-              
+
+              <li class="nav-item">
+                <%= link_to "Contact", contact_path, class: 'nav-link' %>            
+              </li>             
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <%= link_to "Create Post", new_post_path, class: 'nav-link' %>
+              </li>
             </ul>
           </div>
       </div>
