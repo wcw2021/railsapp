@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   get 'services' => 'pages#services', as: 'services'
   get 'contact' => 'pages#contact', as: 'contact'
   
-  resources :posts
+  # resources :posts
+  resources :posts do
+    resources :comments
+  end
  
   
 
